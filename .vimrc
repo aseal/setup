@@ -27,6 +27,12 @@ augroup END
 nmap <silent> <leader>ev :split $MYVIMRC<CR>	" edit vimrc file
 nmap <silent> <leader>sv :so $MYVIMRC<CR> :tabclose <CR>
 
+" Use TAB and arrow keys to navigate through tabs
+nnoremap <tab><up>      :tabr<cr>
+nnoremap <tab><down>    :tabl<cr>
+nnoremap <tab><left>    :tabp<cr>
+nnoremap <tab><right>   :tabn<cr>
+
 colorscheme candy
 
 set nowrap        " don't wrap lines
